@@ -34,3 +34,5 @@ Desafios de javascript do curso em vídeo
 <a href="https://luisfsdias.github.io/javascript/desafios/des008.html">Desafio 008 - Calcular Desconto</a>
 
 <a href="https://luisfsdias.github.io/javascript/desafios/des009.html">Desafio 009 - Reajuste Salarial</a>
+
+<a href="https://luisfsdias.github.io/javascript/desafios/des009.html">Desafio 010 - Resolvendo Bhaskara</a>
