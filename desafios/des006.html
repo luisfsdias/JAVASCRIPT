@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <style>
+    body{
+        font: normal 20px arial;
+    }
+
+    input{
+        width: 200px;
+        height: 50px;
+        font: normal 20px arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <input type="button" value="Converter" onclick="start()">
+    <p>Clique no botão acima para iniciar</p>
+
+    <script>
+        function start(){
+            var t = window.prompt('Digite uma temperatura em °C (Célsius)')
+            var p = window.document.getElementsByTagName('p')[0]
+
+            var t1 = Number(t)
+
+            var k = t1 + 273
+            var f = t1 * 1.8 + 32
+
+            p.innerHTML = `<strong> A temperatura de ${t1}°C, corresponde a...</strong><br> ${k}°K (Kelvin) <br> ${f}°F (Fahrenheit)`
+            
+            //window.document.write(`${k}°K (Kelvin)`)
+            //window.document.write(`${f}°F (Fahrenheit)`)
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

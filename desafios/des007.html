@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+
+        input{
+            width: 200px;
+            height: 50px;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor R$ para US$</h1>
+
+    <input type="button" value="Converter" onclick="start()">
+    <p>Clique no botão para converter</p>
+
+    <script>
+        var c = window.prompt('Antes de mais nada. Quanto está a cotação do dólar agora?')
+        var p = window.document.getElementsByTagName('p')[0]
+
+        function start(){
+            var v = window.prompt('Quantos R$ você tem na carteira?')
+            var c1 = Number(c)
+            var v1 = Number(v)
+
+            var res = v1 / c1
+
+            p.innerHTML = `Você tem ${res.toFixed(2)} dólar(es)`
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
