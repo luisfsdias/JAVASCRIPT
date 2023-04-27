@@ -32,3 +32,5 @@ Desafios de javascript do curso em vídeo
 <a href="https://luisfsdias.github.io/javascript/desafios/des007.html">Desafio 007 - Conversor de R$ para US$</a>
 
 <a href="https://luisfsdias.github.io/javascript/desafios/des008.html">Desafio 008 - Calcular Desconto</a>
+
+<a href="https://luisfsdias.github.io/javascript/desafios/des009.html">Desafio 009 - Reajuste Salarial</a>

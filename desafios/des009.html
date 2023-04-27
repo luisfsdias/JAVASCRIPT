@@ -22,7 +22,25 @@
     <p>Clique no botão acima para iniciar</p>
 
     <script>
-        
+       var p = window.document.getElementsByTagName('p')[0]
+
+        function start(){
+            var nome = window.prompt('Qual é o nome do funcionário?')
+            var s = window.prompt(`Qual é o salário de ${nome}?`)
+            var pc = window.prompt(`O salário de ${nome} vai ser reajustado em qual percentagem?`)
+            var s1 = Number(s)
+            var pc1 = Number(pc)
+            var r = s1 * (pc1 / 100)
+            var res = s1 + r
+            var sc1 = s1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+            var rc = r.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+            var resc = res.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+
+
+            p.innerHTML = `<h1>${nome} recebeu um aumento salarial!</h1><br>O salário atual era ${sc1}.<br>Com um aumento de ${pc1}, o salário vai aumentar ${rc} no próximo mês.<br>E a partir daí, ${nome} vai passar a ganhar ${resc}.`
+
+
+        }
     </script>
 
 
