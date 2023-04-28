@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 011</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    País de origem: <input type="text" name="txtn" id="txtn">
+    <input type="button" value="Conferir" onclick="conferir()">
+
+    <div id="res"></div>
+
+    <script>
+        
+
+        function conferir(){
+
+            var n = window.document.getElementById('txtn')
+            var res = window.document.getElementById('res')
+            
+            var txt = n.value
+
+            if(txt == 'Brasil'){
+                res.innerHTML = 'Brasileiro!'
+            } else {
+                res.innerHTML = 'Estrangeiro!'
+            }
+
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

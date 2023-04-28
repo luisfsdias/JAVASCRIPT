@@ -15,6 +15,10 @@
 
  <a href="https://luisfsdias.github.io/javascript/aula10/ex007.html">Exercício 007 - Somando valores com input</a>
 
+ <a href="https://luisfsdias.github.io/javascript/aula10/ex010.html">Exercício 010 - IF</a>
+
+ <a href="https://luisfsdias.github.io/javascript/aula10/ex010_2.html">Exercício 010_2 - IF e Else</a>
+
 Desafios de javascript do curso em vídeo
 
  <a href="https://luisfsdias.github.io/javascript/desafios/des001.html">Desafio 001 - Botões</a>
