@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 012</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Preço mudou</h1>
+
+    <input type="button" value="Verificar" onclick="start()">
+
+    <p></p>
+
+    <script>
+
+        function start(){
+            var p = document.getElementsByTagName('p')[0]
+            var pb = window.prompt('Qual era o preço anterior do produto?')
+            var pn = window.prompt('Qual é o preço agora?')
+            var vb = Number(pb)
+            var vn = Number(pn)
+            var d = vb - vn
+            var a = vn - vb
+            var variationd = (d / vb) * 100 
+            var variationa = (a / vb) *100
+            var vbc = vb.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+            var vnc = vn.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+            var dc = d.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+            var ac = a.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+            
+            if (vb > vn){
+
+                p.innerHTML = `<h1>Analisando os valores informados</h1>`
+                p.innerHTML += `<p>O produto custava ${vbc} e agora custa ${vnc}</p>`
+                p.innerHTML += `<p>Hoje o produto está mais barato</p>`
+                p.innerHTML += `<p>O preço caiu ${dc} em relação ao anterior</p>`
+                p.innerHTML += `<p>Uma variação de ${variationd.toFixed(2)}% pra baixo</p>`
+
+            } else if (vb < vn) {
+                p.innerHTML = `<h1>Analisando os valores informados</h1>`
+                p.innerHTML += `<p>O produto custava ${vbc} e agora custa ${vnc}</p>`
+                p.innerHTML += `<p>Hoje o produto está mais caro</p>`
+                p.innerHTML += `<p>O preço subiu ${ac} em relação ao anterior</p>`
+                p.innerHTML += `<p>Uma variação de ${variationa.toFixed(2)}% pra cima</p>`
+            } else {
+
+                p.innerHTML = `<h1>Analisando os valores informados</h1>`
+                p.innerHTML += '<p>Não houve variação no preço</>'
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

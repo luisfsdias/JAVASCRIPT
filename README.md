@@ -39,4 +39,10 @@ Desafios de javascript do curso em vídeo
 
 <a href="https://luisfsdias.github.io/javascript/desafios/des009.html">Desafio 009 - Reajuste Salarial</a>
 
-<a href="https://luisfsdias.github.io/javascript/desafios/des009.html">Desafio 010 - Resolvendo Bhaskara</a>
+<a href="https://luisfsdias.github.io/javascript/desafios/des010.html">Desafio 010 - Resolvendo Bhaskara</a>
+
+<a href="https://luisfsdias.github.io/javascript/desafios/des011.html">Desafio 011 - Calcular Ano Bissexto</a>
+
+<a href="https://luisfsdias.github.io/javascript/desafios/des012.html">Desafio 012 - Preço Mudado</a>
+
+<a href="https://luisfsdias.github.io/javascript/desafios/des013.html">Desafio 010 - Situação do aluno</a>

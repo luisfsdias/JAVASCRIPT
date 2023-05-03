@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 013</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            font: normal 20px arial;
+        }
+        div{
+            font-weight: bold;
+            display: inline;
+        }
+        #reprovado{
+            background-color: rgba(255, 0, 0, 0.623);
+            color: darkred;
+
+        }
+        #recuperacao{
+           
+            color: rgb(196, 196, 19);
+        }
+        #aprovado{
+            background-color: rgb(0, 173, 0);
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Situação do aluno</h1>
+
+    <input type="button" value="Entrar com as notas" onclick="start()">
+
+    <p>Clique no botão acima para informar as notas do aluno</p>
+
+    <script>
+
+        function start(){
+            var p = document.getElementsByTagName('p')[0]
+            var nome = window.prompt('Qual é o nome do aluno?')
+            var nota1 = window.prompt(`Primeira nota de ${nome}`)
+            var nota2 = window.prompt(`Segunda nota de ${nome}`)
+            var nt1 = Number(nota1)
+            var nt2 = Number(nota2)
+            var media = (nt1 + nt2) / 2
+
+            if(media < 3) {
+
+                p.innerHTML = `<h1>Analisando a situação de ${nome}</h1>`
+                p.innerHTML += `<p>Com as notas ${nt1.toFixed(1)} e ${nt2.toFixed(1)}, a <strong>média é ${media.toFixed(1)}</strong></p>`
+
+                p.innerHTML += `Com média abaixo de 3,0, o aluno está <div id="reprovado">REPROVADO</div`
+
+            } else if (media > 6) {
+
+                p.innerHTML = `<h1>Analisando a situação de ${nome}</h1>`
+                p.innerHTML += `<p>Com as notas ${nt1.toFixed(1)} e ${nt2.toFixed(1)}, a <strong>média é ${media.toFixed(1)}</strong></p>`
+                p.innerHTML += `Com média acima de 6,0, o aluno está <div id="aprovado">APROVADO</div>`
+
+            } else {
+
+                p.innerHTML = `<h1>Analisando a situação de ${nome}</h1>`
+                p.innerHTML += `<p>Com as notas ${nt1.toFixed(1)} e ${nt2.toFixed(1)}, a <strong>média é ${media.toFixed(1)}</strong></p>`
+                p.innerHTML += `Com média abaixo entre 3,0 e 6,0, o aluno está em <div id="recuperacao">RECUPERAÇÃO</div>`
+
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

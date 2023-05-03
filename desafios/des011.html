@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 011</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ano Bissexto</h1>
+
+    <input type="button" value="Verificar" onclick="start()">
+
+    <p></p>
+
+    <script>
+        
+        function start(){
+
+        var p = document.getElementsByTagName('p')[0]
+        var ano = window.prompt('Qual é o ano que você quer verificar?')
+
+        var val = Number(ano)
+
+
+        /*A PORCENTAGEM DA O VALOR DO RESTO DA DIVISÃO, SE O RESTO É 0, SIGNIFICA QUE O NUMERO É DIVISIVEL PELO OUTRO*/
+
+        if (val % 4 == 0) {
+
+            p.innerHTML = `<h1>Analisando o ano de ${val}...</h1><br><p>O ano de ${val} É BISSEXTO</p>`
+
+        } else {
+            p.innerHTML = `<h1>Analisando o ano de ${val}...</h1><br><p>O ano de ${val} NÃO É BISSEXTO</p>`
+        }
+
+        
+
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
