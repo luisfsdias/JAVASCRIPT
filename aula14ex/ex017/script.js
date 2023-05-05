@@ -1,17 +1,38 @@
 function start(){
 
-    var p = document.getElementsByTagName('p')[1]
-    var valor = document.getElementsByName('txtn')
-    var v = valor.value
-    var v1 = Number(v)
-    var m = 0
+    //Se o programa n reconhecer o numero CONFERE AS VARIAVEIS
+    var tab = document.getElementById('seltab')
+    var numero = document.getElementById('txtn')
 
-    while (m <10) {
+if(numero.value.length == 0)
+
+{
+    window.alert('ERRO! Digite um número')
+    } else{
+        var n = Number(numero.value)
+        var m = 1
+        //vai limpar a tabela
+        tab.innerHTML = ''
+    
+
+    while (m<=10) {
+
+        //o select precisa da tag option pra adicionar coisa na tabela
+        var item = document.createElement('option')
+        item.text = `${n} X ${m} = ${n*m}`
+        item.value = `tab${m}`
+        tab.appendChild(item)
+        m++
+    }
+
+} 
+
+  /*  while (m <10) {
 
         m++
-        p.innerHTML = `${v1} X ${m} = ${v1*m}`
+        res.innerHTML = `${n} X ${m} = ${n*m}`
         
-    }
+    }*/
     
 
 
